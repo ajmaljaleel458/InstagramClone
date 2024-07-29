@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body
@@ -44,10 +45,11 @@ body
 .sugggestions-container
 {
     width: 20rem;
-    height: auto;
+    height: 100%;
     padding-top: 20px;
     display: flex;
     justify-content: end;
+    align-items: flex-start;
 }
 
 .story-container
@@ -69,7 +71,9 @@ body
 .account-switch
 {
     width: 80%;
-    height: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -368,7 +372,6 @@ body
 {
     width: 30px;
     height: 30px;
-    background-color: red;
     display: block;
     border-radius: 40px;
     margin-right: 20px;
@@ -383,7 +386,107 @@ body
 
 .profile-icon-holder-on-accswitch
 {
-    width: 30%;
-    height: 20px;
-    display: block;
+    width: 20%;
+    height: 100%;
+}
+
+.profile-photo-in-acc-switch
+{
+    width: 3rem;
+    height: 3rem;
+}
+
+.user-name-holder-in-accswitch
+{
+    width: 80%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.switch-button-holder
+{
+    width: 20%;
+    height: 100%;
+    background-color: green;
+}
+
+.suggested-account-list-item-container
+{
+    width: 100%;
+    height: 200px;
+}
+
+.account-switch-and-suggestions
+{
+    width: 80%;
+    height: auto;
+    list-style-type: none;
+}
+
+.acc-stwith-section-container
+{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.acc-switch-profile-photo-holder
+{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acc-switch-username-holder
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+    color: rgb(245, 245, 245);
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.acc-switch-button-holder
+{
+    width: 20%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acc-switch-profile-image
+{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 40px;
+}
+
+
+.acc-switch-username-holder p
+{
+    font-size: 0.6rem;
+    color: rgb( 168, 168, 168);
+}
+
+.acc-switch-username-holder h5
+{
+    font-size: 0.7rem;
+}
+
+.acc-switch-button-holder a
+{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: rgb(0, 149, 246);
 }
